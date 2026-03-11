@@ -1,0 +1,49 @@
+# 🎮 V-Bucks Alert Bot
+
+Bot para Telegram que monitora o freethevbucks.com e alerta quando há
+V-Bucks grátis disponíveis no Salve o Mundo do Fortnite.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ ESTRUTURA DO PROJETO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  main.py        → Inicia o bot (execute este arquivo)
+  config.py      → Token, configurações e URLs
+  scraper.py     → Faz scraping do freethevbucks.com
+  formatter.py   → Formata as mensagens do Telegram
+  commands.py    → Comandos /start /status /stop /ajuda
+  scheduler.py   → Verifica V-Bucks automaticamente
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ COMO CONFIGURAR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Instale o Python em python.org/downloads
+   ✅ Marque "Add python.exe to PATH" na instalação!
+
+2. Abra o PowerShell e instale as dependências:
+   python -m pip install python-telegram-bot requests beautifulsoup4 schedule
+
+3. Crie seu bot no Telegram:
+   - Abra @BotFather no Telegram
+   - Envie /newbot
+   - Siga as instruções e copie o TOKEN gerado
+
+4. Abra o arquivo config.py e substitua:
+   SEU_TOKEN_AQUI  →  pelo token do seu bot
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ COMO RODAR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Abra o PowerShell na pasta do bot e execute:
+  python main.py
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ COMANDOS DO BOT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  /start   → Ativar alertas automáticos
+  /status  → Ver V-Bucks disponíveis agora
+  /stop    → Parar alertas
+  /ajuda   → Exibir ajuda
